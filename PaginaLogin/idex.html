@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fug-Login</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="fug">F U G</h1>
+            <img src="assets/fotos/logofugRoxo.jpg" alt="LogoFug" class="logoFug">
+            <H1 class="entrar">Entrar</H1>
+            <h3 class="boasVindas">Bem-Vindo a Fug - Vamos criar a sua conta</h3>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <div class="input-group">
+            <h2 class="email">Email</h2>
+            <div class="input-container">
+                <input type="text" id="login" placeholder=" " required>
+                <label for="login">Email ou número de celular</label>
+            </div>
+        </div>
+        
+        <div class="input-group">
+            <div class="alinharSenhaEsqueceuSenha">
+                <h2 class="senha">Senha</h2>
+                <h2 class="esqueceuSenha">Esqueceu a Senha?</h2>
+            </div>
+            <div class="input-container">
+                <input type="password" id="senha" placeholder=" " required>
+                <label for="login">Senha</label>
+                <img src="assets/fotos/olho.png" alt="" onclick="toggleSenha()" class="verSenhaFoto">
+            </div>
+        </div>
+        
+        <div class="action-buttons">
+            <button type="button" onclick="validarLogin()" class="criar">Criar</button>
+        </div>
+
+        <div class="jaConta">
+            <h3>Já tem uma conta? <span class="destaqueEntrar">Entrar</span> </h3>
+        </div>
+    </main>
+    <aside>
+        <img src="assets/fotos/Fug1.jpg" alt="fug" class="imgFug1">
+    </aside>
+    
+</body>
+</html>
+<script src="script/script.js" defer></script>
